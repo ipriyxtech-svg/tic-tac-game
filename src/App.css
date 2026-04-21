@@ -1,38 +1,176 @@
-.App {
+/* 🌌 Background */
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: linear-gradient(135deg, #0f172a, #020617);
+  color: white;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* 🧊 App */
+.app {
+  padding: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* 🎮 Title */
+h1 {
+  background: linear-gradient(90deg, #22c55e, #38bdf8);
+
+  background-clip: text;              /* ✅ add this */
+  -webkit-background-clip: text;
+
+  color: transparent;                 /* ✅ standard */
+  -webkit-text-fill-color: transparent;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+/* 🔲 Board */
+.board {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  gap: 12px;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin: 40px auto;
+}
+
+/* 📱 MOBILE */
+@media (max-width: 500px) {
+  .board {
+    grid-template-columns: repeat(3, 80px);
+    gap: 10px;
+  }
+
+  .cell {
+    width: 80px;
+    height: 80px;
+    font-size: 2rem;
+  }
+}
+
+/* ✨ GLASS CELL */
+.cell {
+  width: 100px;
+  height: 100px;
+
+  background: rgba(255, 255, 255, 0.08);
+
+  /* 🔥 FIX */
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 2.5rem;
+  font-weight: bold;
+
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* 💡 Hover */
+.cell:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 20px rgba(34, 197, 94, 0.6);
+}
+
+/* 🎉 WIN CELLS */
+.cell.win {
+  background: rgba(34, 197, 94, 0.3);
+  color: #22c55e;
+  animation: bounce 0.6s infinite alternate;
+  box-shadow: 0 0 25px #22c55e;
+}
+
+/* 🔥 Bounce */
+@keyframes bounce {
+  from { transform: scale(1); }
+  to { transform: scale(1.2); }
+}
+
+/* 🔘 BUTTON */
+button {
+  padding: 12px 25px;
+  border-radius: 25px;
+  border: none;
+
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
   color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
-.App-link {
-  color: #61dafb;
+button:hover {
+  background: #22c55e;
+  color: black;
+  box-shadow: 0 0 15px #22c55e;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* ================================= */
+/* 🔥 WIN LINE FIX (IMPORTANT) */
+/* ================================= */
+
+.win-line {
+  position: absolute;
+  background: #22c55e;
+  height: 5px;
+  width: 0;
+  animation: drawLine 0.5s forwards;
+}
+
+/* animation */
+@keyframes drawLine {
+  from { width: 0; }
+  to { width: 80%; }
+}
+
+/* rows */
+.win-line.row1 { top: 15%; left: 10%; }
+.win-line.row2 { top: 50%; left: 10%; }
+.win-line.row3 { top: 85%; left: 10%; }
+
+/* columns */
+.win-line.col1 {
+  left: 15%; top: 10%;
+  width: 5px; height: 0;
+  animation: drawLineY 0.5s forwards;
+}
+.win-line.col2 {
+  left: 50%; top: 10%;
+  width: 5px; height: 0;
+  animation: drawLineY 0.5s forwards;
+}
+.win-line.col3 {
+  left: 85%; top: 10%;
+  width: 5px; height: 0;
+  animation: drawLineY 0.5s forwards;
+}
+
+/* vertical animation */
+@keyframes drawLineY {
+  from { height: 0; }
+  to { height: 80%; }
+}
+
+/* diagonals */
+.win-line.diag1 {
+  top: 50%;
+  left: 50%;
+  width: 120%;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.win-line.diag2 {
+  top: 50%;
+  left: 50%;
+  width: 120%;
+  transform: translate(-50%, -50%) rotate(-45deg);
 }
