@@ -1,70 +1,149 @@
-# Getting Started with Create React App
+<div align="center">
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# ❌⭕ Tic Tac Toe
 
-## Available Scripts
+### 🎮 Modern React Tic Tac Toe Game
 
-In the project directory, you can run:
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=24&pause=1200&color=00F7FF&center=true&vCenter=true&width=900&lines=React+Tic+Tac+Toe;2+Player+Game;Modern+UI;Responsive+Design;Fun+%26+Interactive"/>
 
-### `npm start`
+<br>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<img src="https://img.shields.io/github/stars/ipriyxtech-svg/tic-tac-game?style=for-the-badge"/>
+<img src="https://img.shields.io/github/forks/ipriyxtech-svg/tic-tac-game?style=for-the-badge"/>
+<img src="https://img.shields.io/github/license/ipriyxtech-svg/tic-tac-game?style=for-the-badge"/>
+<img src="https://img.shields.io/github/last-commit/ipriyxtech-svg/tic-tac-game?style=for-the-badge"/>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<br><br>
 
-### `npm test`
+<img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react"/>
+<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"/>
+<img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3"/>
+<img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5"/>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+</div>
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# 🎮 About
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+A modern **Tic Tac Toe** game built with **React.js** featuring a clean UI, responsive layout, automatic winner detection, and smooth gameplay for two players.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+# ✨ Features
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- ❌⭕ Two Player Mode
+- 🏆 Winner Detection
+- 🤝 Draw Detection
+- 🔄 Restart Game
+- 📱 Responsive Design
+- ⚡ Fast Performance
+- 🎨 Modern UI
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+# 🛠 Tech Stack
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+<p align="center">
 
-## Learn More
+<img src="https://skillicons.dev/icons?i=react,javascript,html,css,git,github,vscode"/>
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+</p>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+# 🏗 Game Flow
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```text
+Player X
+   │
+   ▼
+Update Board
+   │
+   ▼
+Player O
+   │
+   ▼
+Winner Check
+   │
+   ▼
+Restart Game
+```
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+# 📂 Project Structure
 
-### Making a Progressive Web App
+```text
+tic-tac-game/
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+├── public/
+├── src/
+├── package.json
+├── package-lock.json
+└── README.md
+```
 
-### Advanced Configuration
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+# 🚀 Installation
 
-### Deployment
+```bash
+git clone https://github.com/ipriyxtech-svg/tic-tac-game.git
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+cd tic-tac-game
 
-### `npm run build` fails to minify
+npm install
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+npm start
+```
+
+---
+
+# 📸 Screenshots
+
+| Home | Gameplay | Winner |
+|------|----------|--------|
+| 📷 | 📷 | 📷 |
+
+---
+
+# 🚀 Future Improvements
+
+- 🤖 AI Opponent
+- 🌙 Dark Mode
+- 🔊 Sound Effects
+- 🏆 Scoreboard
+- 🌐 Online Multiplayer
+
+---
+
+# 👨‍💻 Developer
+
+## Priyanshu Rai
+
+💻 Full Stack Developer
+
+🤖 AI / Machine Learning
+
+⛓ Blockchain Developer
+
+☁️ Cloud & DevOps
+
+🌐 Portfolio
+
+https://portfolio-theta-gold-qbsedt4h1o.vercel.app
+
+🐙 GitHub
+
+https://github.com/ipriyxtech-svg
+
+---
+
+<div align="center">
+
+## ⭐ Star this repository if you like the project ⭐
+
+Made with ❤️ by **Priyanshu Rai**
+
+</div>
